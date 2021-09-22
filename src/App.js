@@ -1,11 +1,15 @@
+import React, { Component } from 'react'
 import './App.css';
 import First from './component/first/First';
-function App() {
-  return (
-    <div className="App">
-      <First />
-    </div>
-  );
-}
+import Weather from './component/weather/weather';
 
-export default App;
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <First />
+      <Weather />
+    </div>
+    )
+  }
+}

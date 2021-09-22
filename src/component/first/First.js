@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './First.css';
 
 export default class First extends Component {
     render() {
