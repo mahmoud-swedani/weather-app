@@ -4,9 +4,11 @@ import './First.css';
 export default class First extends Component {
     render() {
         return (
-            <>
-                <h1>Heloo, world</h1>
-            </>
+            <form onSubmit={this.props.getweather}>
+                <input type="text" placeholder="Entter your City:" id="City"/>
+                <input type="text" placeholder="Entter your Country:" id="Country"/>
+                <button>Get Data</button>
+            </form>
         )
     }
 }
