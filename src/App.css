@@ -1,3 +1,15 @@
 .App {
-  text-align: center;
+  background-color: linear-gradiient(#7b7b7b,#5ccab5);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-controler{
+  background-color: #2c5046;
+  height: 70vh;
+  padding: 100px 100px 0px 50px;
+  margin: auto;
 }

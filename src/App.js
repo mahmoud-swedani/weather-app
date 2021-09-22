@@ -46,14 +46,16 @@ export default class App extends Component {
     const { city, country, humidity, temp, description, error } = this.state
     return (
       <div className="App">
-      <First getweather={this.getWeather}/>
-      <Weather     city={ city }
-    country={ country }
-    humidity={ humidity }
-    temp={  temp }
-    description={ description }
-    error={ error } />
-    </div>
+        <div className="form-controler">
+        <First getweather={this.getWeather}/>
+        <Weather     city={ city }
+      country={ country }
+      humidity={ humidity }
+      temp={  temp }
+      description={ description }
+      error={ error } />
+        </div>
+      </div>
     )
   }
 }
