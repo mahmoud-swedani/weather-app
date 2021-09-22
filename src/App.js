@@ -22,7 +22,7 @@ export default class App extends Component {
     const data = await api.json()
     console.log(data.weather[0].description)
 
-    if(Country & City ) {
+    if(Country && City  ) {
       this.setState({
         city:data.name,
         country:data.sys.country,
@@ -38,15 +38,21 @@ export default class App extends Component {
         humidity:'',
         temp:'',
         description:'',
-        error:'',
+        error:'please enter youer city or contry',
       })
     }    
   }
   render() {
+    const { city, country, humidity, temp, description, error } = this.state
     return (
       <div className="App">
       <First getweather={this.getWeather}/>
-      <Weather  />
+      <Weather     city={ city }
+    country={ country }
+    humidity={ humidity }
+    temp={  temp }
+    description={ description }
+    error={ error } />
     </div>
     )
   }
